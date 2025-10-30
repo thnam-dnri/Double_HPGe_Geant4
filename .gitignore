@@ -6,7 +6,6 @@ CMakeFiles/
 *.so
 *.dylib
 *.dll
-*.md
 
 # Simulation outputs
 output_root/
@@ -25,3 +24,6 @@ output_root/
 *.swp
 *.swo
 .DS_Store
+
+# Local CMake overrides
+CMakeLists.local.cmake
