@@ -429,7 +429,7 @@ void PrimaryGeneratorAction::GenerateRAINIERCascade(G4Event* anEvent)
     }
 
     // Debug output every 1000 events
-    if (anEvent->GetEventID() % 1000 == 0 && !g_quietMode) {
+    if (anEvent->GetEventID() % 50000 == 0 && !g_quietMode) {
         G4cout << "Event " << anEvent->GetEventID()
                << ": Generated " << fRAINIEREgs->size()
                << " gammas from RAINIER cascade" << G4endl;
