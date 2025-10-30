@@ -26,6 +26,12 @@
 #include <vector>
 #include <sstream>
 
+// ROOT configuration must see std::string_view support before including TFile/TTree
+#include "RConfigure.h"
+#ifndef R__HAS_STD_STRING_VIEW
+#define R__HAS_STD_STRING_VIEW 1
+#endif
+
 // ROOT headers for RAINIER file reading
 #include "TFile.h"
 #include "TTree.h"
@@ -429,4 +435,3 @@ void PrimaryGeneratorAction::GenerateRAINIERCascade(G4Event* anEvent)
                << " gammas from RAINIER cascade" << G4endl;
     }
 }
-
