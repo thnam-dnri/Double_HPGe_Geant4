@@ -1,0 +1,11 @@
+# Quick multi-threading test macro
+# Cr-54 CASCADE with 100k events
+
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+/run/initialize
+
+# Run 100k events for performance testing
+/run/beamOn 100000

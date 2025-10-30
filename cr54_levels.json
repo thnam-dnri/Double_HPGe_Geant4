@@ -1,0 +1,2036 @@
+{
+  "1": {
+    "levelNumber": 1,
+    "energy": 0.0,
+    "spin": 0.0,
+    "parity": 1,
+    "halfLife": -1.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "2": {
+    "levelNumber": 2,
+    "energy": 0.834855,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 8e-12,
+    "transitions": [
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 0.8348
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "3": {
+    "levelNumber": 3,
+    "energy": 1.82393,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 1.9e-12,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 0.9891
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "4": {
+    "levelNumber": 4,
+    "energy": 2.61968,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 7.8e-14,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 1.7847
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 2.6196
+      }
+    ],
+    "branchingRatios": [
+      0.9587684551674468,
+      0.04123154483255311
+    ]
+  },
+  "5": {
+    "levelNumber": 5,
+    "energy": 2.82962,
+    "spin": 0.0,
+    "parity": 1,
+    "halfLife": 1.5e-13,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 1.9946
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "6": {
+    "levelNumber": 6,
+    "energy": 3.07407,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 7.1e-15,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 2.2391
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 3.074
+      }
+    ],
+    "branchingRatios": [
+      0.9891154284799616,
+      0.010884571520038416
+    ]
+  },
+  "7": {
+    "levelNumber": 7,
+    "energy": 3.15957,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 2.4e-13,
+    "transitions": [
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 1.336
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 2.325
+      }
+    ],
+    "branchingRatios": [
+      0.5917183436687338,
+      0.40828165633126623
+    ]
+  },
+  "8": {
+    "levelNumber": 8,
+    "energy": 3.22245,
+    "spin": 6.0,
+    "parity": 1,
+    "halfLife": 4.9e-13,
+    "transitions": [
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 1.3986
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "9": {
+    "levelNumber": 9,
+    "energy": 3.39341,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 1.5e-14,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 2.5584
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 3.3934
+      }
+    ],
+    "branchingRatios": [
+      0.6329063250600481,
+      0.367093674939952
+    ]
+  },
+  "10": {
+    "levelNumber": 10,
+    "energy": 3.43688,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 8e-15,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 0.8172
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 2.6019
+      }
+    ],
+    "branchingRatios": [
+      0.02912427089273744,
+      0.9708757291072626
+    ]
+  },
+  "11": {
+    "levelNumber": 11,
+    "energy": 3.468,
+    "spin": 4.0,
+    "parity": -1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "12": {
+    "levelNumber": 12,
+    "energy": 3.514,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "13": {
+    "levelNumber": 13,
+    "energy": 3.65523,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 1.8313
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "14": {
+    "levelNumber": 14,
+    "energy": 3.72003,
+    "spin": 1.0,
+    "parity": 1,
+    "halfLife": 1.66e-14,
+    "transitions": [
+      {
+        "targetLevel": 5,
+        "gammaEnergy": 0.8904
+      },
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.1004
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 3.7198
+      }
+    ],
+    "branchingRatios": [
+      0.09301976482361772,
+      0.13179884913685266,
+      0.7751813860395296
+    ]
+  },
+  "15": {
+    "levelNumber": 15,
+    "energy": 3.78571,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 2.8e-12,
+    "transitions": [
+      {
+        "targetLevel": 8,
+        "gammaEnergy": 0.5637
+      },
+      {
+        "targetLevel": 7,
+        "gammaEnergy": 0.6266
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 1.9615
+      }
+    ],
+    "branchingRatios": [
+      0.2819240465804954,
+      0.046980671495458,
+      0.6710952819240465
+    ]
+  },
+  "16": {
+    "levelNumber": 16,
+    "energy": 3.79854,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 5.1e-14,
+    "transitions": [
+      {
+        "targetLevel": 7,
+        "gammaEnergy": 0.6394
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 1.9743
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 2.9643
+      }
+    ],
+    "branchingRatios": [
+      0.31005502751375685,
+      0.38759379689844925,
+      0.3023511755877939
+    ]
+  },
+  "17": {
+    "levelNumber": 17,
+    "energy": 3.86102,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.2414
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.0261
+      }
+    ],
+    "branchingRatios": [
+      0.6249874962488746,
+      0.3750125037511253
+    ]
+  },
+  "18": {
+    "levelNumber": 18,
+    "energy": 3.8704,
+    "spin": 3.0,
+    "parity": -1,
+    "halfLife": 2.8e-14,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.2508
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.0346
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "19": {
+    "levelNumber": 19,
+    "energy": 3.92555,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 4.0,
+    "transitions": [
+      {
+        "targetLevel": 14,
+        "gammaEnergy": 0.2056
+      },
+      {
+        "targetLevel": 5,
+        "gammaEnergy": 1.0957
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.1011
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.0906
+      }
+    ],
+    "branchingRatios": [
+      0.14530685920577618,
+      0.0,
+      0.0,
+      0.8546931407942238
+    ]
+  },
+  "20": {
+    "levelNumber": 20,
+    "energy": 3.92769,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 3.9276
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "21": {
+    "levelNumber": 21,
+    "energy": 3.98742,
+    "spin": 1.0,
+    "parity": 1,
+    "halfLife": 4.2e-14,
+    "transitions": [
+      {
+        "targetLevel": 9,
+        "gammaEnergy": 0.594
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "22": {
+    "levelNumber": 22,
+    "energy": 4.0129,
+    "spin": 0.0,
+    "parity": 1,
+    "halfLife": 1.4e-15,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.3943
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.1779
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "23": {
+    "levelNumber": 23,
+    "energy": 4.0433,
+    "spin": 5.0,
+    "parity": 1,
+    "halfLife": 2.8e-14,
+    "transitions": [
+      {
+        "targetLevel": 8,
+        "gammaEnergy": 0.8204
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.2209
+      }
+    ],
+    "branchingRatios": [
+      0.8438687737547509,
+      0.15613122624524903
+    ]
+  },
+  "24": {
+    "levelNumber": 24,
+    "energy": 4.08325,
+    "spin": 3.0,
+    "parity": 1,
+    "halfLife": 5.0,
+    "transitions": [
+      {
+        "targetLevel": 10,
+        "gammaEnergy": 0.6463
+      },
+      {
+        "targetLevel": 7,
+        "gammaEnergy": 0.9233
+      },
+      {
+        "targetLevel": 6,
+        "gammaEnergy": 1.0093
+      },
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.4635
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.2594
+      }
+    ],
+    "branchingRatios": [
+      0.03391526186784053,
+      0.12245510479715872,
+      0.0207593417037667,
+      0.13075884147866543,
+      0.6921114501525687
+    ]
+  },
+  "25": {
+    "levelNumber": 25,
+    "energy": 4.126,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 6,
+        "gammaEnergy": 1.052
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "26": {
+    "levelNumber": 26,
+    "energy": 4.12705,
+    "spin": 3.0,
+    "parity": -1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.5082
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.2921
+      }
+    ],
+    "branchingRatios": [
+      0.31504655120632696,
+      0.684953448793673
+    ]
+  },
+  "27": {
+    "levelNumber": 27,
+    "energy": 4.1908,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.3561
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 4.1898
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "28": {
+    "levelNumber": 28,
+    "energy": 4.21751,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.5977
+      },
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.3948
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.383
+      }
+    ],
+    "branchingRatios": [
+      0.13299309516661662,
+      0.3743620534374062,
+      0.4926448513959772
+    ]
+  },
+  "29": {
+    "levelNumber": 29,
+    "energy": 4.2391,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 1.6198
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.4039
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "30": {
+    "levelNumber": 30,
+    "energy": 4.2564,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.4214
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 4.2562
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "31": {
+    "levelNumber": 31,
+    "energy": 4.38095,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 3.5459
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "32": {
+    "levelNumber": 32,
+    "energy": 4.451,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.627
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "33": {
+    "levelNumber": 33,
+    "energy": 4.4584,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 4.4582
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "34": {
+    "levelNumber": 34,
+    "energy": 4.5708,
+    "spin": 3.0,
+    "parity": -1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 3,
+        "gammaEnergy": 2.7468
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "35": {
+    "levelNumber": 35,
+    "energy": 4.583,
+    "spin": 0.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "36": {
+    "levelNumber": 36,
+    "energy": 4.618,
+    "spin": 1.0,
+    "parity": -1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "37": {
+    "levelNumber": 37,
+    "energy": 4.6336,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 5,
+        "gammaEnergy": 1.804
+      },
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 2.0135
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "38": {
+    "levelNumber": 38,
+    "energy": 4.6815,
+    "spin": 8.0,
+    "parity": 1,
+    "halfLife": 5.5e-13,
+    "transitions": [
+      {
+        "targetLevel": 8,
+        "gammaEnergy": 1.4591
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "39": {
+    "levelNumber": 39,
+    "energy": 4.6891,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "40": {
+    "levelNumber": 40,
+    "energy": 4.74,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "41": {
+    "levelNumber": 41,
+    "energy": 4.8447,
+    "spin": 2.0,
+    "parity": -1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.0097
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "42": {
+    "levelNumber": 42,
+    "energy": 4.865,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "43": {
+    "levelNumber": 43,
+    "energy": 4.87236,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 7.0,
+    "transitions": [
+      {
+        "targetLevel": 26,
+        "gammaEnergy": 0.7454
+      },
+      {
+        "targetLevel": 20,
+        "gammaEnergy": 0.9446
+      },
+      {
+        "targetLevel": 19,
+        "gammaEnergy": 0.9468
+      },
+      {
+        "targetLevel": 10,
+        "gammaEnergy": 1.4355
+      },
+      {
+        "targetLevel": 7,
+        "gammaEnergy": 1.7124
+      },
+      {
+        "targetLevel": 6,
+        "gammaEnergy": 1.7982
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 4.8723
+      }
+    ],
+    "branchingRatios": [
+      0.03594378715993033,
+      0.017656597201369285,
+      0.02963785958801273,
+      0.13742918343242647,
+      0.0,
+      0.14883990951494402,
+      0.6304926631033171
+    ]
+  },
+  "44": {
+    "levelNumber": 44,
+    "energy": 4.921,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "45": {
+    "levelNumber": 45,
+    "energy": 4.936,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "46": {
+    "levelNumber": 46,
+    "energy": 4.997,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "47": {
+    "levelNumber": 47,
+    "energy": 5.017,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "48": {
+    "levelNumber": 48,
+    "energy": 5.026,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "49": {
+    "levelNumber": 49,
+    "energy": 5.062,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "50": {
+    "levelNumber": 50,
+    "energy": 5.0858,
+    "spin": 7.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 23,
+        "gammaEnergy": 1.0427
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "51": {
+    "levelNumber": 51,
+    "energy": 5.1136,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.2783
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 5.1139
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "52": {
+    "levelNumber": 52,
+    "energy": 5.156,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "53": {
+    "levelNumber": 53,
+    "energy": 5.18962,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 24,
+        "gammaEnergy": 1.1064
+      },
+      {
+        "targetLevel": 5,
+        "gammaEnergy": 2.3582
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 5.1896
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "54": {
+    "levelNumber": 54,
+    "energy": 5.191,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "55": {
+    "levelNumber": 55,
+    "energy": 5.215,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "56": {
+    "levelNumber": 56,
+    "energy": 5.22656,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 31,
+        "gammaEnergy": 0.8456
+      },
+      {
+        "targetLevel": 7,
+        "gammaEnergy": 2.067
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.3907
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "57": {
+    "levelNumber": 57,
+    "energy": 5.26846,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 4.0,
+    "transitions": [
+      {
+        "targetLevel": 20,
+        "gammaEnergy": 1.3408
+      },
+      {
+        "targetLevel": 10,
+        "gammaEnergy": 1.8313
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.4334
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 5.2683
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "58": {
+    "levelNumber": 58,
+    "energy": 5.275,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "59": {
+    "levelNumber": 59,
+    "energy": 5.2913,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.4559
+      },
+      {
+        "targetLevel": 1,
+        "gammaEnergy": 5.2913
+      }
+    ],
+    "branchingRatios": [
+      0.0,
+      0.0
+    ]
+  },
+  "60": {
+    "levelNumber": 60,
+    "energy": 5.29423,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 5,
+        "gammaEnergy": 2.4642
+      },
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 2.6745
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.4593
+      }
+    ],
+    "branchingRatios": [
+      0.1307,
+      0.3011,
+      0.5682
+    ]
+  },
+  "61": {
+    "levelNumber": 61,
+    "energy": 5.321,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "62": {
+    "levelNumber": 62,
+    "energy": 5.3457,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.5106
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "63": {
+    "levelNumber": 63,
+    "energy": 5.3639,
+    "spin": 7.0,
+    "parity": 1,
+    "halfLife": 2.4e-13,
+    "transitions": [
+      {
+        "targetLevel": 50,
+        "gammaEnergy": 0.2783
+      },
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 0.6823
+      },
+      {
+        "targetLevel": 23,
+        "gammaEnergy": 1.3199
+      },
+      {
+        "targetLevel": 8,
+        "gammaEnergy": 2.1413
+      }
+    ],
+    "branchingRatios": [
+      0.017475767003111025,
+      0.6027989236448028,
+      0.1506497144057539,
+      0.22907559494633228
+    ]
+  },
+  "64": {
+    "levelNumber": 64,
+    "energy": 5.387,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "65": {
+    "levelNumber": 65,
+    "energy": 5.458,
+    "spin": 2.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "66": {
+    "levelNumber": 66,
+    "energy": 5.498,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "67": {
+    "levelNumber": 67,
+    "energy": 5.557,
+    "spin": 4.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "68": {
+    "levelNumber": 68,
+    "energy": 5.58694,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 4.0,
+    "transitions": [
+      {
+        "targetLevel": 26,
+        "gammaEnergy": 1.4601
+      },
+      {
+        "targetLevel": 24,
+        "gammaEnergy": 1.5036
+      },
+      {
+        "targetLevel": 4,
+        "gammaEnergy": 2.9671
+      },
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 4.7518
+      }
+    ],
+    "branchingRatios": [
+      0.08835441772088604,
+      0.13250662533126656,
+      0.3775188759437972,
+      0.4016200810040502
+    ]
+  },
+  "69": {
+    "levelNumber": 69,
+    "energy": 5.67,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "70": {
+    "levelNumber": 70,
+    "energy": 5.698,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "71": {
+    "levelNumber": 71,
+    "energy": 5.74,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "72": {
+    "levelNumber": 72,
+    "energy": 5.771,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "73": {
+    "levelNumber": 73,
+    "energy": 5.7979,
+    "spin": 7.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 39,
+        "gammaEnergy": 1.1109
+      },
+      {
+        "targetLevel": 8,
+        "gammaEnergy": 2.5757
+      }
+    ],
+    "branchingRatios": [
+      0.1863,
+      0.8137
+    ]
+  },
+  "74": {
+    "levelNumber": 74,
+    "energy": 5.8215,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 14,
+        "gammaEnergy": 2.1014
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "75": {
+    "levelNumber": 75,
+    "energy": 5.8564,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 2,
+        "gammaEnergy": 5.0213
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "76": {
+    "levelNumber": 76,
+    "energy": 5.893,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "77": {
+    "levelNumber": 77,
+    "energy": 5.935,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "78": {
+    "levelNumber": 78,
+    "energy": 5.981,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "79": {
+    "levelNumber": 79,
+    "energy": 6.113,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "80": {
+    "levelNumber": 80,
+    "energy": 6.12,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "81": {
+    "levelNumber": 81,
+    "energy": 6.14231,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 60,
+        "gammaEnergy": 0.8479
+      },
+      {
+        "targetLevel": 9,
+        "gammaEnergy": 2.7496
+      }
+    ],
+    "branchingRatios": [
+      0.6173,
+      0.3827
+    ]
+  },
+  "82": {
+    "levelNumber": 82,
+    "energy": 6.193,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "83": {
+    "levelNumber": 83,
+    "energy": 6.212,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "84": {
+    "levelNumber": 84,
+    "energy": 6.255,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "85": {
+    "levelNumber": 85,
+    "energy": 6.289,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "86": {
+    "levelNumber": 86,
+    "energy": 6.31639,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 24,
+        "gammaEnergy": 2.2331
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "87": {
+    "levelNumber": 87,
+    "energy": 6.35,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "88": {
+    "levelNumber": 88,
+    "energy": 6.374,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "89": {
+    "levelNumber": 89,
+    "energy": 6.391,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "90": {
+    "levelNumber": 90,
+    "energy": 6.421,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "91": {
+    "levelNumber": 91,
+    "energy": 6.4462,
+    "spin": 9.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 50,
+        "gammaEnergy": 1.3604
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "92": {
+    "levelNumber": 92,
+    "energy": 6.51,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "93": {
+    "levelNumber": 93,
+    "energy": 6.525,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "94": {
+    "levelNumber": 94,
+    "energy": 6.556,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "95": {
+    "levelNumber": 95,
+    "energy": 6.585,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "96": {
+    "levelNumber": 96,
+    "energy": 6.6178,
+    "spin": 9.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 63,
+        "gammaEnergy": 1.2542
+      },
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 1.936
+      }
+    ],
+    "branchingRatios": [
+      0.6802680268026803,
+      0.3197319731973197
+    ]
+  },
+  "97": {
+    "levelNumber": 97,
+    "energy": 6.633,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "98": {
+    "levelNumber": 98,
+    "energy": 6.658,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "99": {
+    "levelNumber": 99,
+    "energy": 6.678,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "100": {
+    "levelNumber": 100,
+    "energy": 6.699,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "101": {
+    "levelNumber": 101,
+    "energy": 6.71952,
+    "spin": 10.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 2.0389
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "102": {
+    "levelNumber": 102,
+    "energy": 6.7262,
+    "spin": 10.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 2.0425
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "103": {
+    "levelNumber": 103,
+    "energy": 6.743,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "104": {
+    "levelNumber": 104,
+    "energy": 6.78,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "105": {
+    "levelNumber": 105,
+    "energy": 6.814,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "106": {
+    "levelNumber": 106,
+    "energy": 6.831,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "107": {
+    "levelNumber": 107,
+    "energy": 6.875,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "108": {
+    "levelNumber": 108,
+    "energy": 6.899,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "109": {
+    "levelNumber": 109,
+    "energy": 6.941,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "110": {
+    "levelNumber": 110,
+    "energy": 6.96,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "111": {
+    "levelNumber": 111,
+    "energy": 6.991,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "112": {
+    "levelNumber": 112,
+    "energy": 7.05,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "113": {
+    "levelNumber": 113,
+    "energy": 7.084,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "114": {
+    "levelNumber": 114,
+    "energy": 7.103,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "115": {
+    "levelNumber": 115,
+    "energy": 7.127,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "116": {
+    "levelNumber": 116,
+    "energy": 7.159,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "117": {
+    "levelNumber": 117,
+    "energy": 7.174,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "118": {
+    "levelNumber": 118,
+    "energy": 7.199,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "119": {
+    "levelNumber": 119,
+    "energy": 7.2353,
+    "spin": 9.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 96,
+        "gammaEnergy": 0.6176
+      },
+      {
+        "targetLevel": 63,
+        "gammaEnergy": 1.8705
+      },
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 2.5549
+      }
+    ],
+    "branchingRatios": [
+      0.224,
+      0.376,
+      0.4
+    ]
+  },
+  "120": {
+    "levelNumber": 120,
+    "energy": 7.2921,
+    "spin": 9.0,
+    "parity": 1,
+    "halfLife": 3.0,
+    "transitions": [
+      {
+        "targetLevel": 73,
+        "gammaEnergy": 1.4943
+      },
+      {
+        "targetLevel": 63,
+        "gammaEnergy": 1.9279
+      },
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 2.6106
+      }
+    ],
+    "branchingRatios": [
+      0.3481,
+      0.1546,
+      0.4973
+    ]
+  },
+  "121": {
+    "levelNumber": 121,
+    "energy": 7.37,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "122": {
+    "levelNumber": 122,
+    "energy": 7.4,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "123": {
+    "levelNumber": 123,
+    "energy": 7.59,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "124": {
+    "levelNumber": 124,
+    "energy": 7.85,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "125": {
+    "levelNumber": 125,
+    "energy": 7.895,
+    "spin": 10.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 38,
+        "gammaEnergy": 3.2134
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "126": {
+    "levelNumber": 126,
+    "energy": 8.2369,
+    "spin": 11.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 102,
+        "gammaEnergy": 1.5127
+      },
+      {
+        "targetLevel": 96,
+        "gammaEnergy": 1.6192
+      }
+    ],
+    "branchingRatios": [
+      0.12742548509701943,
+      0.8725745149029805
+    ]
+  },
+  "127": {
+    "levelNumber": 127,
+    "energy": 8.3,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "128": {
+    "levelNumber": 128,
+    "energy": 8.5,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "129": {
+    "levelNumber": 129,
+    "energy": 8.8254,
+    "spin": 12.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 102,
+        "gammaEnergy": 2.1012
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "130": {
+    "levelNumber": 130,
+    "energy": 8.8591,
+    "spin": 10.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 120,
+        "gammaEnergy": 1.567
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "131": {
+    "levelNumber": 131,
+    "energy": 8.99,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "132": {
+    "levelNumber": 132,
+    "energy": 9.1544,
+    "spin": 11.0,
+    "parity": 1,
+    "halfLife": 2.0,
+    "transitions": [
+      {
+        "targetLevel": 119,
+        "gammaEnergy": 1.919
+      },
+      {
+        "targetLevel": 102,
+        "gammaEnergy": 2.4302
+      }
+    ],
+    "branchingRatios": [
+      0.2908,
+      0.7092
+    ]
+  },
+  "133": {
+    "levelNumber": 133,
+    "energy": 9.3,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "134": {
+    "levelNumber": 134,
+    "energy": 9.42,
+    "spin": -1.0,
+    "parity": 1,
+    "halfLife": 0.0,
+    "transitions": [],
+    "branchingRatios": []
+  },
+  "135": {
+    "levelNumber": 135,
+    "energy": 9.6344,
+    "spin": 12.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 102,
+        "gammaEnergy": 2.9102
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "136": {
+    "levelNumber": 136,
+    "energy": 9.9718,
+    "spin": 13.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 126,
+        "gammaEnergy": 1.7348
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "137": {
+    "levelNumber": 137,
+    "energy": 10.5516,
+    "spin": 11.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 102,
+        "gammaEnergy": 3.8273
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "138": {
+    "levelNumber": 138,
+    "energy": 11.1159,
+    "spin": 11.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 130,
+        "gammaEnergy": 2.2567
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "139": {
+    "levelNumber": 139,
+    "energy": 11.7859,
+    "spin": 15.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 136,
+        "gammaEnergy": 1.8141
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  },
+  "140": {
+    "levelNumber": 140,
+    "energy": 12.5399,
+    "spin": 13.0,
+    "parity": 1,
+    "halfLife": 1.0,
+    "transitions": [
+      {
+        "targetLevel": 132,
+        "gammaEnergy": 3.3854
+      }
+    ],
+    "branchingRatios": [
+      1.0
+    ]
+  }
+}

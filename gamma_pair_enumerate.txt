@@ -1,0 +1,250 @@
+import json
+import numpy as np
+from typing import List, Dict, Tuple
+
+class GammaPairEnumerator:
+    def __init__(self, levels_data: Dict, Sn: float = 9.718, tolerance: float = 0.01):
+        """
+        Initialize with level scheme data.
+        
+        Args:
+            levels_data: Dictionary of nuclear levels
+            Sn: Neutron separation energy (MeV)
+            tolerance: Energy matching tolerance (MeV)
+        """
+        self.levels = levels_data
+        self.Sn = Sn
+        self.tolerance = tolerance
+        self.gamma_pairs = []
+        
+    def check_spin_parity_allowed(self, J1: float, P1: int, J2: float, P2: int) -> bool:
+        """
+        Check if transition between two levels is allowed by selection rules.
+        Returns True if either spin or parity is unknown (conservative approach).
+        """
+        # If spin unknown, allow (conservative)
+        if J1 < 0 or J2 < 0:
+            return True
+        
+        dJ = abs(J1 - J2)
+        
+        # 0 -> 0 forbidden for single gamma
+        if J1 == 0 and J2 == 0:
+            return False
+            
+        # For electric/magnetic transitions up to E4/M4
+        # ΔJ can be 0,1,2,3,4 (but not 0->0)
+        if dJ > 4:
+            return False
+            
+        return True
+    
+    def find_all_cascades(self, start_energy: float, current_level: int, 
+                         path: List[Tuple], visited: set) -> List[List[Tuple]]:
+        """
+        Recursively find all cascade paths from start_energy to ground state.
+        
+        Returns: List of paths, where each path is [(level_num, gamma_energy, branching)]
+        """
+        if current_level in visited:
+            return []
+        
+        level_data = self.levels[str(current_level)]
+        
+        # Reached ground state
+        if current_level == 1:
+            return [path] if len(path) > 0 else []
+        
+        all_paths = []
+        visited_copy = visited.copy()
+        visited_copy.add(current_level)
+        
+        # Try each transition from this level
+        transitions = level_data.get('transitions', [])
+        branching_ratios = level_data.get('branchingRatios', [])
+        
+        for i, trans in enumerate(transitions):
+            target = trans['targetLevel']
+            gamma_E = trans['gammaEnergy']
+            br = branching_ratios[i] if i < len(branching_ratios) else 0.0
+            
+            # Skip zero branching ratio
+            if br == 0.0:
+                continue
+            
+            # Check spin/parity selection rules
+            target_data = self.levels[str(target)]
+            if not self.check_spin_parity_allowed(
+                level_data['spin'], level_data['parity'],
+                target_data['spin'], target_data['parity']
+            ):
+                continue
+            
+            new_path = path + [(current_level, gamma_E, br, target)]
+            
+            # Continue cascade
+            sub_paths = self.find_all_cascades(
+                start_energy, target, new_path, visited_copy
+            )
+            all_paths.extend(sub_paths)
+        
+        return all_paths
+    
+    def enumerate_two_gamma_pairs(self):
+        """
+        Find all 2-gamma pairs that sum to Sn.
+        Each pair represents: Sn -> intermediate_level -> ground_state
+        """
+        self.gamma_pairs = []
+        
+        # Iterate through all possible intermediate levels
+        for level_key in self.levels.keys():
+            level_num = int(level_key)
+            level_data = self.levels[level_key]
+            E_intermediate = level_data['energy']
+            
+            # Skip ground state
+            if level_num == 1:
+                continue
+            
+            # Calculate first gamma energy (Sn -> intermediate)
+            gamma1 = self.Sn - E_intermediate
+            
+            # First gamma must be positive
+            if gamma1 <= 0:
+                continue
+            
+            # Find all paths from intermediate level to ground state
+            cascades = self.find_all_cascades(E_intermediate, level_num, [], set())
+            
+            # Process each cascade path
+            for cascade in cascades:
+                if len(cascade) == 0:
+                    continue
+                
+                # For 2-gamma coincidence, we need exactly 1 transition to ground
+                # or a path that sums to E_intermediate
+                self._process_cascade(level_num, E_intermediate, gamma1, cascade)
+    
+    def _process_cascade(self, start_level: int, E_start: float, 
+                        gamma1: float, cascade: List[Tuple]):
+        """Process a single cascade path to extract 2-gamma pairs."""
+        
+        # Calculate cumulative energy and branching
+        cumulative_br = 1.0
+        cumulative_E = 0.0
+        
+        for i, (level, gamma_E, br, target) in enumerate(cascade):
+            cumulative_E += gamma_E
+            cumulative_br *= br
+            
+            # Check if this forms a valid 2-gamma pair
+            if abs(cumulative_E - E_start) < self.tolerance:
+                # This path returns to ground state
+                # gamma2 is the sum of all gammas in this cascade segment
+                gamma2 = cumulative_E
+                
+                # Get intermediate levels
+                intermediate_levels = [level for level, _, _, _ in cascade[:i+1]]
+                
+                self.gamma_pairs.append({
+                    'gamma1': gamma1,
+                    'gamma2': gamma2,
+                    'intermediate_level': start_level,
+                    'cascade_path': intermediate_levels + [cascade[i][3]],
+                    'total_branching': cumulative_br,
+                    'n_steps': i + 1
+                })
+                
+                # For direct 2-gamma: also record as simple pair
+                if i == 0 and cascade[i][3] == 1:  # Direct to ground
+                    pass  # Already recorded above
+    
+    def get_direct_two_gamma_pairs(self):
+        """
+        Get only direct 2-gamma pairs (Sn -> intermediate -> ground).
+        This is simpler and most relevant for your analysis.
+        """
+        pairs = []
+        
+        for level_key in self.levels.keys():
+            level_num = int(level_key)
+            if level_num == 1:
+                continue
+            
+            level_data = self.levels[level_key]
+            E_level = level_data['energy']
+            gamma1 = self.Sn - E_level
+            
+            if gamma1 <= 0:
+                continue
+            
+            # Check transitions from this level
+            for i, trans in enumerate(level_data.get('transitions', [])):
+                if trans['targetLevel'] == 1:  # Direct to ground
+                    gamma2 = trans['gammaEnergy']
+                    br = level_data['branchingRatios'][i] if i < len(level_data['branchingRatios']) else 0.0
+                    
+                    if br > 0:
+                        pairs.append({
+                            'gamma1': gamma1,
+                            'gamma2': gamma2,
+                            'intermediate_level': level_num,
+                            'intermediate_energy': E_level,
+                            'branching_ratio': br,
+                            'spin': level_data['spin'],
+                            'parity': level_data['parity']
+                        })
+        
+        return sorted(pairs, key=lambda x: x['intermediate_energy'])
+    
+    def export_pairs(self, filename: str = 'gamma_pairs.txt'):
+        """Export gamma pairs to text file."""
+        pairs = self.get_direct_two_gamma_pairs()
+        
+        with open(filename, 'w') as f:
+            f.write(f"# Gamma-ray pairs for Cr-54 neutron capture (Sn = {self.Sn} MeV)\n")
+            f.write(f"# Total pairs: {len(pairs)}\n")
+            f.write("#" + "="*80 + "\n")
+            f.write(f"{'#':<2} {'Level':<6} {'E_int(MeV)':<12} {'J^π':<8} {'γ1(MeV)':<12} {'γ2(MeV)':<12} {'BR':<10}\n")
+            f.write("#" + "="*80 + "\n")
+            
+            for i, pair in enumerate(pairs, 1):
+                parity_str = '+' if pair['parity'] == 1 else '-' if pair['parity'] == -1 else '?'
+                spin_str = f"{int(pair['spin'])}{parity_str}" if pair['spin'] >= 0 else "?"
+                
+                f.write(f"{i:<2} {pair['intermediate_level']:<6} "
+                       f"{pair['intermediate_energy']:<12.6f} {spin_str:<8} "
+                       f"{pair['gamma1']:<12.6f} {pair['gamma2']:<12.6f} "
+                       f"{pair['branching_ratio']:<10.6f}\n")
+        
+        print(f"Exported {len(pairs)} gamma pairs to {filename}")
+        return pairs
+
+
+# Example usage
+if __name__ == "__main__":
+    # Load your JSON data
+    with open('cr54_levels.json', 'r') as f:
+        levels_data = json.load(f)
+    
+    # Create enumerator
+    enumerator = GammaPairEnumerator(levels_data, Sn=9.718)
+    
+    # Get direct 2-gamma pairs (most relevant for coincidence)
+    pairs = enumerator.get_direct_two_gamma_pairs()
+    
+    print(f"Found {len(pairs)} direct 2-gamma pairs\n")
+    print(f"{'Level':<8} {'E_level':<10} {'γ1':<10} {'γ2':<10} {'BR':<10} {'J^π':<8}")
+    print("="*60)
+    
+    for pair in pairs[:20]:  # Show first 20
+        parity = '+' if pair['parity'] == 1 else '-' if pair['parity'] == -1 else '?'
+        spin = f"{int(pair['spin'])}{parity}" if pair['spin'] >= 0 else "?"
+        
+        print(f"{pair['intermediate_level']:<8} {pair['intermediate_energy']:<10.4f} "
+              f"{pair['gamma1']:<10.4f} {pair['gamma2']:<10.4f} "
+              f"{pair['branching_ratio']:<10.4f} {spin:<8}")
+    
+    # Export to file
+    enumerator.export_pairs('cr54_gamma_pairs.txt')

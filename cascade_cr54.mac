@@ -1,0 +1,14 @@
+# Cascade simulation macro for Cr-53(n,g)Cr-54 neutron capture
+# Uses G4CASCADE to generate realistic gamma cascades
+
+# Verbosity
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+# Initialize
+/run/initialize
+
+# Run CASCADE events
+# Cr-54: Z=24, A=54, Sn=9.719 MeV (set via command line)
+/run/beamOn 10000000

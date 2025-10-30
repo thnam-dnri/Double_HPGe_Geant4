@@ -1,0 +1,14 @@
+# Cascade simulation macro for Cl-36 neutron capture
+# Uses G4CASCADE to generate realistic gamma cascades
+
+# Verbosity
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+# Initialize
+/run/initialize
+
+# Run CASCADE events
+# Default: Cl-36 (Z=17, A=36, E_excitation=8.579 MeV)
+/run/beamOn 10000000

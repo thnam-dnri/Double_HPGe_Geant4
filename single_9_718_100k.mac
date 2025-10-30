@@ -1,0 +1,13 @@
+# Macro file for 100k events with 9.718 MeV single gamma source
+# Isotropic emission from origin
+
+# Initialize
+/run/initialize
+
+# Set verbose level
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+# Run 100,000 events
+/run/beamOn 100000
