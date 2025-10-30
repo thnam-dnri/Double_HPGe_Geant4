@@ -57,7 +57,8 @@ enum SourceMode {
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-    PrimaryGeneratorAction(const std::string& rainierFile = "", bool generateCascades = true);
+    PrimaryGeneratorAction(const std::string& rainierFile = "", bool generateCascades = true,
+                           SourceMode initialMode = CO60_CASCADE);
     virtual ~PrimaryGeneratorAction();
 
     virtual void GeneratePrimaries(G4Event*);
@@ -65,7 +66,7 @@ public:
     const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
 
     // CASCADE mode configuration
-    void SetSourceMode(SourceMode mode) { fSourceMode = mode; }
+    void SetSourceMode(SourceMode mode);
     void SetIsotope(G4int Z, G4int A) { fIsotopeZ = Z; fIsotopeA = A; }
     void SetExcitationEnergy(G4double E) { fExcitationEnergy = E; }
     void SetCascadePosition(G4ThreeVector pos) { fCascadePosition = pos; }
@@ -111,6 +112,8 @@ private:
     void GenerateCo60Cascade(G4Event* anEvent);
     void GenerateCascadeGammas(G4Event* anEvent);
     void GenerateRAINIERCascade(G4Event* anEvent);
+
+    const char* SourceModeToString(SourceMode mode) const;
 };
 
 #endif

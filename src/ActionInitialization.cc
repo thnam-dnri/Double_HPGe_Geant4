@@ -48,8 +48,7 @@ void ActionInitialization::Build() const
 {
     // Primary generator
     PrimaryGeneratorAction* primaryGenerator =
-        new PrimaryGeneratorAction(fRAINIERFile, fGenerateCascades);
-    primaryGenerator->SetSourceMode(fSourceMode);
+        new PrimaryGeneratorAction(fRAINIERFile, fGenerateCascades, fSourceMode);
     primaryGenerator->SetTwoGammaOnly(fTwoGammaOnly);
 
     // Configure CASCADE isotope if in CASCADE_DIRECT mode

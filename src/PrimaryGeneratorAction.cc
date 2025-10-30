@@ -41,13 +41,15 @@ extern bool g_quietMode;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-PrimaryGeneratorAction::PrimaryGeneratorAction(const std::string& rainierFile, bool generateCascades)
+PrimaryGeneratorAction::PrimaryGeneratorAction(const std::string& rainierFile,
+                                               bool generateCascades,
+                                               SourceMode initialMode)
 : G4VUserPrimaryGeneratorAction(),
   fParticleGun(0),
   fRAINIERFile(rainierFile),
   fRandomGenerator(std::random_device{}()),
   fGenerateCascades(generateCascades),
-  fSourceMode(generateCascades ? CO60_CASCADE : SINGLE_GAMMA),
+  fSourceMode(initialMode),
   fIsotopeZ(17),              // Default: Cl-36 (from Cl-35 + n)
   fIsotopeA(36),
   fExcitationEnergy(8.579),   // Cl-36 neutron separation energy (MeV)
@@ -81,7 +83,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const std::string& rainierFile, b
         G4cout << "PrimaryGeneratorAction constructor called with:" << G4endl;
         G4cout << "  generateCascades = " << fGenerateCascades << G4endl;
         G4cout << "  rainierFile = " << fRAINIERFile << G4endl;
-        G4cout << "  sourceMode = " << fSourceMode << G4endl;
+        G4cout << "  sourceMode = " << SourceModeToString(fSourceMode) << G4endl;
     }
 
     // Verify CASCADE has data for default isotope
@@ -97,9 +99,22 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const std::string& rainierFile, b
         }
     }
 
-    // Load Co-60 cascade data (hardcoded)
     if (!g_quietMode) {
-        G4cout << "Using Co-60 cascade source (1.173 and 1.332 MeV)" << G4endl;
+        switch (fSourceMode) {
+            case CO60_CASCADE:
+                G4cout << "Using Co-60 cascade source (1.173 and 1.332 MeV)" << G4endl;
+                break;
+            case SINGLE_GAMMA:
+                G4cout << "Using single gamma mode (randomized Co-60 gamma)" << G4endl;
+                break;
+            case CASCADE_DIRECT:
+                G4cout << "Using CASCADE-generated neutron capture cascades" << G4endl;
+                break;
+            case CASCADE_RAINIER:
+                G4cout << "RAINIER cascade mode enabled; reading cascades from ROOT file"
+                       << G4endl;
+                break;
+        }
     }
 
     // Initialize RAINIER ROOT file if specified
@@ -124,6 +139,44 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
         fRAINIERRootFile->Close();
         delete fRAINIERRootFile;
     }
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void PrimaryGeneratorAction::SetSourceMode(SourceMode mode)
+{
+    if (fSourceMode == mode) {
+        if (mode == CASCADE_RAINIER && !fRAINIERFile.empty() && fRAINIERRootFile == nullptr) {
+            InitializeRAINIERFile();
+        }
+        return;
+    }
+
+    fSourceMode = mode;
+
+    if (!g_quietMode) {
+        G4cout << "PrimaryGeneratorAction: Switching source mode to "
+               << SourceModeToString(mode) << G4endl;
+    }
+
+    if (mode == CASCADE_RAINIER && !fRAINIERFile.empty() && fRAINIERRootFile == nullptr) {
+        InitializeRAINIERFile();
+    }
+}
+
+const char* PrimaryGeneratorAction::SourceModeToString(SourceMode mode) const
+{
+    switch (mode) {
+        case CO60_CASCADE:
+            return "Co-60 cascade";
+        case SINGLE_GAMMA:
+            return "single gamma";
+        case CASCADE_DIRECT:
+            return "CASCADE neutron capture";
+        case CASCADE_RAINIER:
+            return "RAINIER cascade";
+    }
+    return "unknown";
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
