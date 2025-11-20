@@ -52,7 +52,6 @@ G4String G4CASCADE::GetDataDirectory()
     std::ifstream test(path + "/17-36.bin");  // Test with Cl-36 data file
     if (test.good()) {
       test.close();
-      G4cout << "CASCADE: Using data directory: " << path << G4endl;
       return path;
     }
   }
